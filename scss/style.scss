@@ -1,0 +1,29 @@
+header{
+  height: 70px;
+}
+.logo img{
+  height: 50px;
+  width: auto;
+  margin: 8px 0 0 8px;
+}
+.list-menu{
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+.menu-responsive{
+  font-size: 24px;
+  cursor: pointer;
+  top: 24px;
+  right: 8%;
+  color: #2a1a5e;
+}
+nav ul{
+  display: none;
+}
+nav:hover ul, .list-menu:hover{
+  display: block;
+  transition: 0.5s ease-in-out;
+  top: 48px;
+  right: 8%;
+}
