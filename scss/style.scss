@@ -1,5 +1,11 @@
+*{
+  color:  #2a1a5e;
+}
 header{
   height: 70px;
+}
+.space{
+  height: 72px;
 }
 .logo img{
   height: 50px;
@@ -16,7 +22,6 @@ header{
   cursor: pointer;
   top: 24px;
   right: 8%;
-  color: #2a1a5e;
 }
 nav ul{
   display: none;
@@ -26,4 +31,23 @@ nav:hover ul, .list-menu:hover{
   transition: 0.5s ease-in-out;
   top: 48px;
   right: 8%;
+}
+nav ul li a{
+  color:  #2a1a5e;
+}
+.parallax{
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fondo{
+  background-image: url(../assets/hero.jpg);
+  height: 320px;
+}
+.big{
+  font-size: 64px;
+}
+.list-social li{
+  list-style: none;
 }
