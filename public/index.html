@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orientados | Herramientas para construir tu futuro</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- header  -->
+  <header class="fixed z-20 bg-white w-full">
+    <div class="header__elements w-m-10/12 my-2 flex justify-between items-center">
+      <figure>
+        <img src="./img/Orientados.png" alt="" class="h-10 mx-8">
+      </figure>
+      <figure>
+        <img onclick="toogle()" id="menu" src="./img/menu.svg" alt="" class="h-6 mx-8 cursor-pointer">
+      </figure>
+    </div>
+    <nav id="nav" class="w-full bg-transparent h-0 md:w-1/2">
+      <ul id="menuContent" class="transition-all duration-300 ease-in-out hidden w-2/3 h-screen bg-gray-100 text-center relative bottom-0 z-10 opacity-0">
+        <li class="mt-4 pt-10 p-2"><a href="#">Home</a></li>
+        <li class="mt-4 p-2"><a href="#">Home</a></li>
+        <li class="mt-4 p-2"><a href="#">Home</a></li>
+        <li class="mt-4 p-2"><a href="#">Home</a></li>
+        <li class="mt-4 p-2"><a href="#">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header  -->
+  <div class="space h-16"></div>
+  <div id="hero">
+      <div class="adventure h-64 sm:h-48 lg:h-56"></div>
+  </div>
+
+
+  <script>
+    let menuContent = document.getElementById('menuContent')
+    let nav = document.getElementById('nav')
+    function toogle(){
+      if (menuContent.classList.contains('opacity-0')) {
+        menuContent.classList.remove('opacity-0')
+        menuContent.classList.remove('hidden')
+      }else{
+        menuContent.classList.add('block')
+        menuContent.classList.add('opacity-0')
+      }
+    }
+    nav.addEventListener('click', toogle)
+  </script>
+</body>
+</html>

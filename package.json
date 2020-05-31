@@ -1,0 +1,25 @@
+{
+  "name": "julioMendez",
+  "version": "1.0.0",
+  "description": "Propuesta sitio Web Julio Mendez",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss src/base.css -o public/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcarlosalba/julioMendez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcarlosalba/julioMendez/issues"
+  },
+  "homepage": "https://github.com/rcarlosalba/julioMendez#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  }
+}
